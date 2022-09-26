@@ -37,6 +37,11 @@ namespace Lab
             }
         }
 
+        public void DoSmth()
+        {
+            Console.WriteLine("sdsds");
+        }
+
         public void VisitLecture(string courseTitle, string lecture)
         {
             this.Lectures[lecture] = true;
