@@ -37,32 +37,12 @@ namespace Lab
             }
         }
 
-        public void DoSmth()
-        {
-            Console.WriteLine("sdsds");
-        }
-
         public void VisitLecture(string courseTitle, string lecture)
         {
             this.Lectures[lecture] = true;
             this.CourseProggress[courseTitle].VisitedLectures++;
         }
 
-        // При енролі студента додається вся потрібно інфа
-        /*public void Enroll(Course course)
-        {
-            this.Course = course;
-            this.CourseProggress = new Dictionary<string, CourseProggress>();
-            this.Assignments = new Dictionary<string, bool>();
-            var tmpTasks = Course.Assignments;
-            foreach (var item in this.Course.Assignments)
-            {
-                this.Assignments.Add(item, false);
-            }
-            this.Course.Students.Add(this);
-
-            Console.WriteLine("Student has successfully enroled on Course");
-        }*/
         public void Enroll(Course course)
         {
             this.Courses.Add(course);
